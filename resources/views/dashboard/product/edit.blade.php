@@ -59,17 +59,25 @@
                             </span>
                         @enderror
                     </div>
-                    <div class="form-group"><label for="merk">Merk Produk</label>
-                        <input type="text" class="form-control" required id="merk" placeholder="Ketikkan merk produkmu"
-                            name="merk" value="{{ old('merk',$product['merk']) }}">
-                        <span class="font-13 text-muted">Contoh: Zahra</span>
+                    <div class="form-group">
+                        <label for="merk">Merk Produk</label>
+                        <select class="custom-select" required name="merk" id="merk">
+                            @foreach ($merk as $item)
+                                @if($item->merk === old('merk',$item->merk))
+                                    <option selected value="{{ $item->merk }}">{{ $item->merk }}</option>
+                                @else
+                                    <option value="{{ $item->merk }}">{{ $item->merk }}</option>
+                                @endif
+                            @endforeach
+                        </select>
+                        <div class="invalid-feedback">Silahkan pilih</div>
+                        <span class="font-13 text-muted">Silahkan pilih merk</span>
                         @error('merk')
                             <span role="alert">
                                 <small class="text-danger d-block"><strong>{{ $message }}</strong></small>
                             </span>
                         @enderror
                     </div>
-
                     <div class="form-group">
                         <label class="control-label" for="stock">Jumlah Stok</label>
                         <input id="stock" type="text" id="stock" name="stock" required
