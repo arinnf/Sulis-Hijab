@@ -51,10 +51,15 @@
                             placeholder="Ketikkan nama produkmu" name="product_name" value="{{ old('product_name') }}">
                             <span class="font-13 text-muted">Contoh: Kerudung Segi Empat</span>
                     </div>
-                    <div class="form-group"><label for="merk">Merk Produk</label>
-                        <input type="text" class="form-control" required name="merk" id="merk" value="{{ old('merk') }}"
-                            placeholder="Ketikkan merk produkmu">
-                        <span class="font-13 text-muted">Contoh: Zahra</span>
+                    <div class="form-group">
+                        <label for="merk">Merk Produk</label>
+                        <select class="custom-select" required name="merk" id="merk">
+                            @foreach ($merk as $item)
+                                <option value="{{ old('merk',$item->merk) }}">{{ $item->merk }}</option>
+                            @endforeach
+                        </select>
+                        <div class="invalid-feedback">Silahkan pilih</div>
+                        <span class="font-13 text-muted">Pilih merk</span>
                         @error('merk')
                             <span role="alert">
                                 <small class="text-danger d-block"><strong>{{ $message }}</strong></small>
