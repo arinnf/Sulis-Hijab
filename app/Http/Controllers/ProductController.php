@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Product;
 use App\Http\Requests\StoreProductRequest;
 use App\Http\Requests\UpdateProductRequest;
+use App\Models\Merk;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Storage;
 
@@ -28,7 +29,8 @@ class ProductController extends Controller
      */
     public function create()
     {
-        return view('dashboard.product.create');
+        $merk = Merk::get();
+        return view('dashboard.product.create', compact('merk'));
     }
 
     /**
@@ -58,7 +60,8 @@ class ProductController extends Controller
     {
         $data = array(
             'product' => Product::where('product_code', $product)->first(),
-            'product_code' => $product
+            'product_code' => $product,
+            'merk' => Merk::get()
         );
         return view('dashboard.product.edit', $data);
     }
