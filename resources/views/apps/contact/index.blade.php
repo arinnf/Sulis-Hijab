@@ -2,7 +2,7 @@
 @section('content')
 <!-- Start Bradcaump area -->
 <div class="ht__bradcaump__area"
-    style="background: rgba(0, 0, 0, 0) url(user-asset/images/bg/2.jpg) no-repeat scroll center center / cover ;">
+    style="background: rgba(0, 0, 0, 0) url(user-asset/images/bg/background.jpg) no-repeat scroll center center / cover ;">
     <div class="ht__bradcaump__wrap">
         <div class="container">
             <div class="row">
@@ -36,7 +36,7 @@
                                     <span class="ti-location-pin"></span>
                                 </div>
                                 <div class="contact__details">
-                                    <p>Location : <br> 77, seventh avenue, Brat road USA.</p>
+                                    <p>Location : <br> Jl. HS.Ronggo Waluyo, Puseurjaya</p>
                                 </div>
                             </div>
                             <!-- End Single Adress -->
@@ -46,7 +46,7 @@
                                     <span class="ti-mobile"></span>
                                 </div>
                                 <div class="contact__details">
-                                    <p> Phone : <br><a href="#">+00 111 222 333 44</a></p>
+                                    <p> Phone : <br><a href="#">+62 81221009880</a></p>
                                 </div>
                             </div>
                             <!-- End Single Adress -->
@@ -56,7 +56,7 @@
                                     <span class="ti-email"></span>
                                 </div>
                                 <div class="contact__details">
-                                    <p> Mail :<br><a href="#">yourmail@gmail.com</a></p>
+                                    <p> Mail :<br><a href="#">sulishijab@gmail.com</a></p>
                                 </div>
                             </div>
                             <!-- End Single Adress -->
@@ -69,7 +69,7 @@
                         <form id="contact-form" action="https://whizthemes.com/mail-php/other/mail.php" method="POST">
                             <div class="single-contact-form">
                                 <div class="contact-box name">
-                                    <input type="text" name="name" placeholder="Your Nme*">
+                                    <input type="text" name="name" placeholder="Your Name*">
                                     <input type="email" name="email" placeholder="Mail*">
                                 </div>
                             </div>

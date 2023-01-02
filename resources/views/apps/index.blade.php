@@ -5,7 +5,7 @@
     <div class="slider__activation__wrap owl-carousel owl-theme">
         <!-- Start Single Slide -->
         <div class="slide slider__full--screen"
-            style="background: rgba(0, 0, 0, 0) url(user-asset/images/slider/bg/1.png) no-repeat scroll center center / cover ;">
+            style="background: rgba(0, 0, 0, 0) url(user-asset/images/slider/bg/slider-1.png) no-repeat scroll center center / cover ;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 offset-lg-4">
@@ -22,7 +22,7 @@
         <!-- End Single Slide -->
         <!-- Start Single Slide -->
         <div class="slide slider__full--screen"
-            style="background: rgba(0, 0, 0, 0) url(user-asset/images/slider/bg/2.png) no-repeat scroll center center / cover ;">
+            style="background: rgba(0, 0, 0, 0) url(user-asset/images/slider/bg/slider-2.png) no-repeat scroll center center / cover ;">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">

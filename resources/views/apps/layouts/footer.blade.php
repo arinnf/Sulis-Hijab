@@ -1,5 +1,5 @@
 <!-- Start Footer Area -->
-<footer class="htc__foooter__area" style="background: rgba(0, 0, 0, 0) url(user-asset/images/bg/1.jpg) no-repeat scroll center center / cover ;">
+<footer class="htc__foooter__area" style="background: rgba(0, 0, 0, 0) url(user-asset/images/bg/footer.png) no-repeat scroll center center / cover ;">
     <div class="container">
         <div class="row footer__container clearfix">
             <!-- Start Single Footer Widget -->
@@ -11,7 +11,7 @@
                         </a>
                     </div>
                     <div class="footer__details">
-                        <p>Get 10% discount with notified about the latest news and updates.</p>
+                        <p>Dapatkan diskon 10% melalui pemberitahuan tentang berita dan update terbaru.</p>
                     </div>
                 </div>
             </div>
@@ -21,7 +21,7 @@
                 <div class="ft__widget contact__us">
                     <h2 class="ft__title">Contact Us</h2>
                     <div class="footer__inner">
-                        <p> 319 Clematis St. <br> Suite 100 WPB, FL 33401 </p>
+                        <p> Jl. HS.Ronggo Waluyo,  <br> Puseurjaya </p>
                     </div>
                 </div>
             </div>
@@ -46,7 +46,7 @@
                 <div class="col-md-12 col-lg-12 col-sm-12 col-xs-12">
                     <div class="copyright__inner">
                         <div class="copyright">
-                            <p>© 2022 AFIFA COLLECTION GROUP <i class="ti-heart"></i> by <a target="_blank" href="{{ url('/') }}">AFIFA.</a></p>
+                            <p>© 2022 Sulis Hijab Collection <i class="ti-heart"></i> by <a target="_blank" href="{{ url('/') }}">Kelompok 9</a></p>
                         </div>
                         <ul class="footer__menu">
                             <li><a href="{{ URL::to('/') }}">Home</a></li>
